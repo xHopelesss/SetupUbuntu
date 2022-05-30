@@ -41,6 +41,13 @@ cd ..
 
 git clone --quiet https://github.com/danielmiessler/SecLists.git > /dev/null
 
+echo "== Installing gaining access tools =="
+
+
+echo "== Installing maintaining access tools =="
+
+
+
 echo "== Installing Other Tools =="
 git clone --quiet https://github.com/bitbrute/evillimiter.git
 cd evillimiter
