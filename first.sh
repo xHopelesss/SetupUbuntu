@@ -23,8 +23,6 @@ echo "== Tools directory created =="
 sudo apt-get install -y git > /dev/null
 sudo apt-get install -y python3 > /dev/null
 sudo apt-get install -y python3-pip > /dev/null
-pip install pip --upgrade > /dev/null
-pip install setuptools --upgrade > /dev/null
 echo "== Dependencies installed =="
 
 echo "== Installing recon tools =="
