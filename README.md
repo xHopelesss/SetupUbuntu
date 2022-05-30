@@ -7,7 +7,9 @@ It downloads the following tools:
   Gobuster
   Routersploit
   SecLists
+  Metasploit
   Evillimiter
   JohnTheRipper
+  Noisy
 
 To run it, download it from the repository, use the command "chmod x+"
