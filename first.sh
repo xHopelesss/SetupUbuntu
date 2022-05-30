@@ -43,7 +43,7 @@ git clone --quiet https://github.com/danielmiessler/SecLists.git > /dev/null
 echo "== Installing Other Tools =="
 git clone --quiet https://github.com/bitbrute/evillimiter.git
 cd evillimiter
-sudo python3 setup.py install
+sudo python3 setup.py install &> /dev/null
 cd .. 
 
 sudo apt-get install -y john > /dev/null
