@@ -21,6 +21,7 @@ echo "== Tools directory created =="
 sudo apt-get install -y git > /dev/null
 sudo apt-get install -y python3 > /dev/null
 sudo apt-get install -y python3-pip > /dev/null
+sudo apt-get install -y curl gpgv2 autoconf bison build-essential git-corelibapr1 postgresql libaprutil1 libcurl4openssl-dev libgmp3-dev libpcap-dev openssl libpq-dev libreadline6-dev libsqlite3-dev libssl-dev locate libsvn1 libtool libxml2 libxml2-dev libxslt-dev wget libyaml-dev ncurses-dev  postgresql-contrib xsel zlib1g zlib1g-dev > /dev/null
 echo "== Dependencies installed =="
 
 echo "== Installing recon tools =="
