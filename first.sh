@@ -22,6 +22,7 @@ sudo apt-get install -y git > /dev/null
 sudo apt-get install -y python3 > /dev/null
 sudo apt-get install -y python3-pip > /dev/null
 sudo apt-get install -y curl gpgv2 autoconf bison build-essential git-corelibapr1 postgresql libaprutil1 libcurl4openssl-dev libgmp3-dev libpcap-dev openssl libpq-dev libreadline6-dev libsqlite3-dev libssl-dev locate libsvn1 libtool libxml2 libxml2-dev libxslt-dev wget libyaml-dev ncurses-dev  postgresql-contrib xsel zlib1g zlib1g-dev > /dev/null
+pip install -y requests > /dev/null
 echo "== Dependencies installed =="
 
 echo "== Installing recon tools =="
@@ -42,11 +43,18 @@ cd ..
 git clone --quiet https://github.com/danielmiessler/SecLists.git > /dev/null
 
 echo "== Installing gaining access tools =="
-
+curl https://raw.githubusercontent.com/rapid7/metasploit omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \ > /dev/null
+chmod 755 msfinstall > /dev/null
+./msfinstall > /dev/null
 
 echo "== Installing maintaining access tools =="
 
+git clone --quiet https://github.com/1tayH/noisy.git > /dev/null
+cd noisy
+python noisy.py --config config.json > /dev/null
+cd ..
 
+sudo apt-get install -y john > /dev/null
 
 echo "== Installing Other Tools =="
 git clone --quiet https://github.com/bitbrute/evillimiter.git
@@ -54,4 +62,4 @@ cd evillimiter
 sudo python3 setup.py install &> /dev/null
 cd .. 
 
-sudo apt-get install -y john > /dev/null
+
