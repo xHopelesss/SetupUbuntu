@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "Automatic Ubuntu Set-up"
-
-echo "== Please input sudo password =="
-	sudo -l > /dev/null
+sudo -l > /dev/null
 
 #Updates and upgrades user system
 echo "== Updating and upgrading system =="
